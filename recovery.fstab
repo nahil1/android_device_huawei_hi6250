@@ -1,5 +1,5 @@
 /system 		ext4	/dev/block/platform/hi_mci.0/by-name/system		flags=backup=1
-/system_image		emmc	/dev/block/platform/hi_mci.0/by-name/system		flags=backup=1;display="system Image"
+/system_image		emmc	/dev/block/platform/hi_mci.0/by-name/system		flags=backup=1;display="System Image"
 /vendor			ext4	/dev/block/platform/hi_mci.0/by-name/vendor		flags=backup=1
 /product		ext4	/dev/block/platform/hi_mci.0/by-name/product		flags=backup=1
 /version		ext4	/dev/block/platform/hi_mci.0/by-name/version		flags=backup=1
@@ -8,9 +8,9 @@
 /data			f2fs	/dev/block/platform/hi_mci.0/by-name/userdata		flags=backup=1;encryptable=footer
 /splash2		ext4	/dev/block/platform/hi_mci.0/by-name/splash2		flags=backup=1
 /cache			ext4	/dev/block/platform/hi_mci.0/by-name/cache		flags=backup=1
-/misc			ext4	/dev/block/platform/hi_mci.0/by-name/misc		flags=backup=0
 /kernel			emmc	/dev/block/platform/hi_mci.0/by-name/kernel		flags=backup=1
 /ramdisk		emmc	/dev/block/platform/hi_mci.0/by-name/ramdisk		flags=backup=1
 /recovery_ramdisk	emmc	/dev/block/platform/hi_mci.0/by-name/recovery_ramdisk	flags=backup=1
+/oeminfo        emmc    /dev/block/platform/hi_mci.0/by-name/oeminfo        flags=backup=1
 /external_sd		auto	/dev/block/platform/hi_mci.1/mmc_host/mmc1/		flags=display="Micro SDcard";storage;wipeingui;removable
 /usb-otg		auto	/dev/block/sda1 /dev/block/sda				flags=display="USB-OTG";storage;wipeingui;removable
