@@ -1,3 +1,20 @@
+
+#
+# Copyright (C) 2018 The TwrpBuilder Open-Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -24,9 +41,10 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_EXFAT_DRIVER := exfat
 
-# Recovery (TWRP)
-ifeq ($(RECOVERY_VARIANT),twrp)
+# TWRP specific build flags
+RECOVERY_VARIANT := twrp
 TW_THEME := portrait_hdpi
+TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/hisi_fb.524289/leds/lcd_backlight0"
 TW_MAX_BRIGHTNESS := 981
 TW_DEFAULT_BRIGHTNESS := 100
@@ -36,7 +54,4 @@ TW_EXTRA_LANGUAGES := true
 TW_USE_NEW_MINADBD := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_FBE := true
-endif
-
-# SELinux Policies
-BOARD_SEPOLICY_DIRS := device/huawei/hi6250/sepolicy
+TW_EXTRA_LANGUAGES := true
