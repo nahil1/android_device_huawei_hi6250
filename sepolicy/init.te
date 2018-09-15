@@ -1,5 +1,6 @@
 allow init configfs:file { getattr open unlink write };
 allow init configfs:lnk_file create;
-
-# Allow init to mount adbd binary
-allow init rootfs:file mounton;
+allow init functionfs:dir mounton;
+allow init sysfs_android_usb:dir write;
+allow init kernel:system module_request;
+allow init rootfs:file { create write };

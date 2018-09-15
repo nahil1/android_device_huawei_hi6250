@@ -1,0 +1,1 @@
+allow hal_keymaster_default rootfs:file entrypoint;
