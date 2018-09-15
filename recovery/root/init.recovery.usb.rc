@@ -1,6 +1,3 @@
-on init
-    mount none /system/bin/adbd /sbin/adbd bind
-
 on init && property:sys.usb.configfs=1
     mount configfs none /config
     mkdir /config/usb_gadget/g1
