@@ -56,5 +56,8 @@ TW_INCLUDE_FBE := true
 TW_USE_NEW_MINADBD := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 
+# Custom Battery Path
+TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/battery/power_supply/Battery
+
 # Include
 TARGET_SPECIFIC_HEADER_PATH := device/huawei/hi6250/include
