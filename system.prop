@@ -1,3 +1,6 @@
 ro.build.selinux=1
 ro.treble.enabled=true
 persist.sys.usb.config=mtp,adb
+ro.secure=0
+ro.adb.secure=0
+ro.debuggable=1
