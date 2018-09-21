@@ -53,6 +53,7 @@ TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_FBE := true
+TW_CRYPTO_USE_SYSTEM_VOLD := hwservicemanager keymaster-3-0 gatekeeper-1-0 servicemanager teecd
 TW_USE_NEW_MINADBD := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 ALLOW_MISSING_DEPENDENCIES := true 
@@ -66,3 +67,6 @@ TARGET_SPECIFIC_HEADER_PATH := device/huawei/hi6250/include
 # SELinux Policies
 BOARD_SEPOLICY_DIRS := device/huawei/hi6250/sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true 
+
+# Debug
+TW_CRYPTO_SYSTEM_VOLD_DEBUG := true

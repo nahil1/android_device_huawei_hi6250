@@ -1,0 +1,5 @@
+service sys_gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+    class early_hal
+    user system
+    group system
+    seclabel u:r:recovery:s0

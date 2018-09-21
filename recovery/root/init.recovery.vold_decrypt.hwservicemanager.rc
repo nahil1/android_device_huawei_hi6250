@@ -1,0 +1,8 @@
+service sys_hwservicemanager /sbin/hwservicemanager
+    user root
+    disabled
+    group root
+    seclabel  u:r:recovery:s0
+    onrestart class_reset hal
+    onrestart setprop hwservicemanager.ready false
+    writepid /dev/cpuset/system-background/tasks /dev/blkio/system-background/tasks

@@ -1,0 +1,6 @@
+service sys_servicemanager /system/bin/servicemanager
+    class core animation
+    user root
+    group root readproc
+    critical
+    seclabel u:r:recovery:s0
