@@ -48,7 +48,6 @@ allow recovery shared_relro_file:dir getattr;
 allow recovery sysfs_android_usb:dir search;
 allow recovery textclassifier_data_file:dir { getattr open read };
 allow recovery textclassifier_data_file:file getattr;
-allow recovery theme_prop:file { getattr open };
 allow recovery tmpfs:fifo_file { create read };
 allow recovery unencrypted_data_file:dir { getattr search };
 allow recovery unencrypted_data_file:file { getattr open read };

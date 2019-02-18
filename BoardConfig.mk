@@ -24,7 +24,7 @@ TARGET_CPU_VARIANT := cortex-a53
 
 # Secondary Architecture
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
@@ -56,14 +56,14 @@ TW_INCLUDE_FBE := true
 TW_CRYPTO_USE_SYSTEM_VOLD := hwservicemanager keymaster-3-0 teecd gatekeeper-1-0 servicemanager
 TW_USE_NEW_MINADBD := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
-ALLOW_MISSING_DEPENDENCIES := true 
+TW_USE_TOOLBOX := true
 
 # Custom Battery Path
 TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/battery/power_supply/Battery
 
 # SELinux Policies
 BOARD_SEPOLICY_DIRS := device/huawei/hi6250/sepolicy
-SELINUX_IGNORE_NEVERALLOWS := true 
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
